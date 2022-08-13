@@ -1,0 +1,75 @@
+[
+{
+    "src_DB_name":"classicmodels",
+    "src_table_name":"customers",
+    "src_target_column":"customerNumber",
+    "dest_schema_name":"public",
+    "dest_table_name":"customers",
+    "dest_target_column":"customernumber",
+    "status":"active"
+},
+{
+    "src_DB_name":"classicmodels",
+    "src_table_name":"employees",
+    "src_target_column":"employeeNumber",
+    "dest_schema_name":"public",
+    "dest_table_name":"employees",
+    "dest_target_column":"employeenumber",
+    "status":"active"
+},
+{
+    "src_DB_name":"classicmodels",
+    "src_table_name":"offices",
+    "src_target_column":"officeCode",
+    "dest_schema_name":"public",
+    "dest_table_name":"offices",
+    "dest_target_column":"officecode",
+    "status":"active"
+},
+{
+    "src_DB_name":"classicmodels",
+    "src_table_name":"orderdetails",
+    "src_target_column":"orderNumber",
+    "dest_schema_name":"public",
+    "dest_table_name":"orderdetails",
+    "dest_target_column":"ordernumber",
+    "status":"active"
+},
+{
+    "src_DB_name":"classicmodels",
+    "src_table_name":"orders",
+    "src_target_column":"orderNumber",
+    "dest_schema_name":"public",
+    "dest_table_name":"orders",
+    "dest_target_column":"ordernumber",
+    "status":"active"
+},
+{
+    "src_DB_name":"classicmodels",
+    "src_table_name":"payments",
+    "src_target_column":"customerNumber",
+    "dest_schema_name":"public",
+    "dest_table_name":"payments",
+    "dest_target_column":"customernumber",
+    "status":"active"
+},
+
+{
+    "src_DB_name":"classicmodels",
+    "src_table_name":"productlines",
+    "src_target_column":"productLine",
+    "dest_schema_name":"public",
+    "dest_table_name":"productlines",
+    "dest_target_column":"productline",
+    "status":"inactive"
+},
+{
+    "src_DB_name":"classicmodels",
+    "src_table_name":"products",
+    "src_target_column":"productCode",
+    "dest_schema_name":"public",
+    "dest_table_name":"products",
+    "dest_target_column":"productcode",
+    "status":"inactive"
+}
+]
