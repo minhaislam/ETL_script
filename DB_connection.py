@@ -46,13 +46,6 @@ try:
                         password=data['src_credential']["password"]
                         )
 
-    # src_db_cursor = src_db_conn.cursor()
-
-
-        # # Mail:
-        # user_mail = 'minhajul.islam@surecash.net'
-        # app_password = 'nxrjguibgzfzuelu'
-
     user_mail = data["mail_credential"]["user_mail"]
     password = data["mail_credential"]["mail_app_password"]
     to_receiver = data["mail_credential"]["to_receiver"]

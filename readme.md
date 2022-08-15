@@ -118,3 +118,17 @@ which python
 - select postgres database from the list
 - Fillup the required fields to connect to data source
 - Finally select necessary tables and load them
+
+## Step 6: Adding project to github
+- Install gitbash if not inswtalled.
+- Create a new repository
+-then follow the commands to push files.
+- to get python location run 
+```sh
+git init
+git add .
+git commit "first commit"
+git remote add origin the_repositorylink
+git push -u origin main
+```
+- Link of my repository **https://github.com/minhaislam/ETL_script*
