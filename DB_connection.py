@@ -1,11 +1,14 @@
 import psycopg2
 import mysql.connector
+from os.path import dirname,abspath
 
 import os
 
+
+
 import json
 
-files_dir = os.path.join(os.getcwd(),"credential","credentials.json")
+files_dir = os.path.join(dirname(abspath(__file__)),"credential","credentials.json")
 
 f = open(files_dir)
   

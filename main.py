@@ -3,6 +3,7 @@ from DB_connection import src_db_conn,dsestination_db_conn,user_mail,password,to
 import psycopg2.extras
 import math
 import pandas as pd
+from os.path import dirname,abspath
 import os
 from pretty_html_table import build_table
 import smtplib
@@ -68,7 +69,7 @@ def insert_to_log_table(v_log_data,v_dsestination_db_conn,v_dsestination_db_curs
 
     insert_string = f'''INSERT INTO public.data_etl_log
                                     (table_name, row_count, data_insertion_time)
-                                    VALUES('{v_log_data[0]}', '{v_log_data[1]}', now());''';
+                                    VALUES('{v_log_data[0]}', '{str(v_log_data[1])}', now());''';
     print(insert_string)
 
     # psycopg2.extras.execute_batch(v_dsestination_db_cursor,insert_string)
@@ -233,7 +234,7 @@ if __name__ == '__main__':
         src_db_cursor = src_db_conn.cursor()
 
         dsestination_db_cursor = dsestination_db_conn.cursor()
-        config_table_dir = os.path.join(os.getcwd(),"table_names.json")
+        config_table_dir = os.path.join(dirname(abspath(__file__)),"table_names.json")
 
         f = open(config_table_dir)
         
